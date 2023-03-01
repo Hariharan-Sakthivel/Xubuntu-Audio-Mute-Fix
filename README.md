@@ -4,13 +4,13 @@ Follow the simple steps given below,
 
 1.  Run this code "aplay -l" on "terminal" to check your card number.
         
-        card 0: PCH [HDA Intel PCH], device 0: ALC269VC Analog [ALC269VC Analog]
+        card 0: ******************
         Subdevices: 1/1
         Subdevice #0: subdevice #0
     
     you will get something like this. In this example, card number is 0 and yours may vary, No problem just note down your card number.
 
-2.  Save the file "audioSetup.sh" and Open "terminal" navigate to the file using "cd /path/to/audioSetup.sh" replace /path/to/ with the actual path
+2.  Download the script file "audioSetup.sh" and Open "terminal" navigate to the file location using "cd /path/to/audioSetup.sh" replace /path/to/ with the actual path.
 
 3.  Run this command "nano audioSetup.sh" and Make sure to replace <card number> with the number of your sound card as listed by the aplay -l command. 
 
@@ -21,7 +21,7 @@ Follow the simple steps given below,
         amixer -c <card number> set Auto-Mute Mode Disabled
         save this file "ctrl + x" and enter "y" and press "enter".
 
-4.  run this command "chmod +x /path/to/audioSetup.sh" replace /path/to/ with the actual path to the script, this command makes the executable. Hereafter no need for "terminal" just close it.
+4.  Run this command "chmod +x /path/to/audioSetup.sh" replace /path/to/ with the actual path to the script, this command makes the file executable. Hereafter no need for "terminal" just close it.
 
 5.  Open the "Wisker" menu and Click on the "Settings" menu.
 
@@ -31,7 +31,7 @@ Follow the simple steps given below,
 
 8.  Click on the "Add" button to add a new startup application.
 
-9.  In the "Name" and "Description" field, enter name and description like "audio setup" and "set volume to 100%".
+9.  In the "Name" and "Description" field, enter name and description like "audio setup" and "Automate audio settings".
 
 10.  In the "Command" field, enter the full path to the script you created earlier, like /path/to/sound_setup.sh.
 
